@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		FE92070A2BDC6C1300A1B1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9207092BDC6C1300A1B1B2 /* AppDelegate.swift */; };
 		FE92070C2BDC6C1300A1B1B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92070B2BDC6C1300A1B1B2 /* SceneDelegate.swift */; };
-		FE92070E2BDC6C1300A1B1B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92070D2BDC6C1300A1B1B2 /* ViewController.swift */; };
-		FE9207112BDC6C1300A1B1B2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FE9207102BDC6C1300A1B1B2 /* Base */; };
 		FE9207142BDC6C1300A1B1B2 /* Reactivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE9207122BDC6C1300A1B1B2 /* Reactivity.xcdatamodeld */; };
 		FE9207162BDC6C1500A1B1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9207152BDC6C1500A1B1B2 /* Assets.xcassets */; };
 		FE9207192BDC6C1500A1B1B2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FE9207182BDC6C1500A1B1B2 /* Base */; };
+		FE9207232BDC6FC100A1B1B2 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = FE9207222BDC6FC100A1B1B2 /* RxBlocking */; };
+		FE9207252BDC6FC100A1B1B2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FE9207242BDC6FC100A1B1B2 /* RxCocoa */; };
+		FE9207272BDC6FC100A1B1B2 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FE9207262BDC6FC100A1B1B2 /* RxRelay */; };
+		FE92072C2BDC709000A1B1B2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92072B2BDC709000A1B1B2 /* VideoViewController.swift */; };
+		FE92072E2BDC70D500A1B1B2 /* VideoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92072D2BDC70D500A1B1B2 /* VideoModule.swift */; };
+		FE9207302BDC723E00A1B1B2 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92072F2BDC723E00A1B1B2 /* VideoViewModel.swift */; };
+		FE9207332BDC724E00A1B1B2 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9207322BDC724E00A1B1B2 /* ViewModelProtocol.swift */; };
+		FE9207372BDC741700A1B1B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FE9207362BDC741700A1B1B2 /* SnapKit */; };
+		FE9207392BDC742800A1B1B2 /* IMG_2372.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = FE9207382BDC742800A1B1B2 /* IMG_2372.MP4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE9207062BDC6C1300A1B1B2 /* Reactivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reactivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9207092BDC6C1300A1B1B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE92070B2BDC6C1300A1B1B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE92070D2BDC6C1300A1B1B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE9207102BDC6C1300A1B1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE9207132BDC6C1300A1B1B2 /* Reactivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reactivity.xcdatamodel; sourceTree = "<group>"; };
 		FE9207152BDC6C1500A1B1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE9207182BDC6C1500A1B1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE92071A2BDC6C1500A1B1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE92072B2BDC709000A1B1B2 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		FE92072D2BDC70D500A1B1B2 /* VideoModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModule.swift; sourceTree = "<group>"; };
+		FE92072F2BDC723E00A1B1B2 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		FE9207322BDC724E00A1B1B2 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		FE9207382BDC742800A1B1B2 /* IMG_2372.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_2372.MP4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9207272BDC6FC100A1B1B2 /* RxRelay in Frameworks */,
+				FE9207372BDC741700A1B1B2 /* SnapKit in Frameworks */,
+				FE9207252BDC6FC100A1B1B2 /* RxCocoa in Frameworks */,
+				FE9207232BDC6FC100A1B1B2 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +72,59 @@
 		FE9207082BDC6C1300A1B1B2 /* Reactivity */ = {
 			isa = PBXGroup;
 			children = (
-				FE9207092BDC6C1300A1B1B2 /* AppDelegate.swift */,
-				FE92070B2BDC6C1300A1B1B2 /* SceneDelegate.swift */,
-				FE92070D2BDC6C1300A1B1B2 /* ViewController.swift */,
-				FE92070F2BDC6C1300A1B1B2 /* Main.storyboard */,
+				FE9207342BDC72B800A1B1B2 /* Mocks */,
+				FE9207312BDC724300A1B1B2 /* Protocols */,
+				FE9207292BDC706E00A1B1B2 /* Modules */,
+				FE9207282BDC706200A1B1B2 /* App */,
 				FE9207152BDC6C1500A1B1B2 /* Assets.xcassets */,
 				FE9207172BDC6C1500A1B1B2 /* LaunchScreen.storyboard */,
 				FE92071A2BDC6C1500A1B1B2 /* Info.plist */,
 				FE9207122BDC6C1300A1B1B2 /* Reactivity.xcdatamodeld */,
 			);
 			path = Reactivity;
+			sourceTree = "<group>";
+		};
+		FE9207282BDC706200A1B1B2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FE92070B2BDC6C1300A1B1B2 /* SceneDelegate.swift */,
+				FE9207092BDC6C1300A1B1B2 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FE9207292BDC706E00A1B1B2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FE92072A2BDC707600A1B1B2 /* Video */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FE92072A2BDC707600A1B1B2 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				FE92072B2BDC709000A1B1B2 /* VideoViewController.swift */,
+				FE92072D2BDC70D500A1B1B2 /* VideoModule.swift */,
+				FE92072F2BDC723E00A1B1B2 /* VideoViewModel.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		FE9207312BDC724300A1B1B2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE9207322BDC724E00A1B1B2 /* ViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FE9207342BDC72B800A1B1B2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				FE9207382BDC742800A1B1B2 /* IMG_2372.MP4 */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +143,12 @@
 			dependencies = (
 			);
 			name = Reactivity;
+			packageProductDependencies = (
+				FE9207222BDC6FC100A1B1B2 /* RxBlocking */,
+				FE9207242BDC6FC100A1B1B2 /* RxCocoa */,
+				FE9207262BDC6FC100A1B1B2 /* RxRelay */,
+				FE9207362BDC741700A1B1B2 /* SnapKit */,
+			);
 			productName = Reactivity;
 			productReference = FE9207062BDC6C1300A1B1B2 /* Reactivity.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +177,10 @@
 				Base,
 			);
 			mainGroup = FE9206FD2BDC6C1300A1B1B2;
+			packageReferences = (
+				FE9207212BDC6FC100A1B1B2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				FE9207352BDC741700A1B1B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FE9207072BDC6C1300A1B1B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9207392BDC742800A1B1B2 /* IMG_2372.MP4 in Resources */,
 				FE9207162BDC6C1500A1B1B2 /* Assets.xcassets in Resources */,
 				FE9207192BDC6C1500A1B1B2 /* Base in Resources */,
-				FE9207112BDC6C1300A1B1B2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE92070E2BDC6C1300A1B1B2 /* ViewController.swift in Sources */,
 				FE92070A2BDC6C1300A1B1B2 /* AppDelegate.swift in Sources */,
 				FE92070C2BDC6C1300A1B1B2 /* SceneDelegate.swift in Sources */,
+				FE92072E2BDC70D500A1B1B2 /* VideoModule.swift in Sources */,
+				FE92072C2BDC709000A1B1B2 /* VideoViewController.swift in Sources */,
+				FE9207332BDC724E00A1B1B2 /* ViewModelProtocol.swift in Sources */,
+				FE9207302BDC723E00A1B1B2 /* VideoViewModel.swift in Sources */,
 				FE9207142BDC6C1300A1B1B2 /* Reactivity.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +221,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FE92070F2BDC6C1300A1B1B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE9207102BDC6C1300A1B1B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE9207172BDC6C1500A1B1B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +363,6 @@
 				INFOPLIST_FILE = Reactivity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,7 +394,6 @@
 				INFOPLIST_FILE = Reactivity/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,6 +435,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE9207212BDC6FC100A1B1B2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.7.0;
+			};
+		};
+		FE9207352BDC741700A1B1B2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE9207222BDC6FC100A1B1B2 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE9207212BDC6FC100A1B1B2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		FE9207242BDC6FC100A1B1B2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE9207212BDC6FC100A1B1B2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		FE9207262BDC6FC100A1B1B2 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE9207212BDC6FC100A1B1B2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		FE9207362BDC741700A1B1B2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE9207352BDC741700A1B1B2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FE9207122BDC6C1300A1B1B2 /* Reactivity.xcdatamodeld */ = {
