@@ -6,13 +6,31 @@
 //
 
 import UIKit
+import RxSwift
 
+//MARK: - Props and inits
 final class FeedVideoViewController: UIViewController {
     
     private var collectionView: UICollectionView?
     
+    private let currentIndex = BehaviorSubject(value: 0)
+    
     private var videos = ["1", "IMG_2372"]
     
+    private var viewModel: FeedVideoViewModel?
+    
+    init(viewModel: FeedVideoViewModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+//MARK: - Life cycle
+extension FeedVideoViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         makeCollectionView()
@@ -24,6 +42,7 @@ final class FeedVideoViewController: UIViewController {
     }
 }
 
+//MARK: - Collection View
 extension FeedVideoViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     private func makeCollectionView() {
         let layout = UICollectionViewFlowLayout()
@@ -66,6 +85,7 @@ extension FeedVideoViewController: UICollectionViewDataSource, UICollectionViewD
     }
 }
 
+//MARK: - Preview
 #Preview("Feed View", traits: .portrait, body: {
-    FeedVideoViewController()
+    FeedVideoViewController(viewModel: FeedVideoViewModel())
 })

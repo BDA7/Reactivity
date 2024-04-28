@@ -82,6 +82,7 @@ final class VideoCollectionViewCell: UICollectionViewCell {
     }
     
     public func startVideo() {
+        player?.seek(to: CMTime.zero)
         player?.play()
     }
     
