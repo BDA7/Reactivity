@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        window?.rootViewController = VideoModule.build()
+        window?.rootViewController = FeedVideoViewController()
         
         window?.makeKeyAndVisible()
     }
