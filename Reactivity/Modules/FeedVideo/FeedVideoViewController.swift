@@ -45,6 +45,7 @@ extension FeedVideoViewController {
 //MARK: - Collection View
 extension FeedVideoViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     private func makeCollectionView() {
+        collectionView?.backgroundColor = .black
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.itemSize = CGSize(width: view.frame.size.width, height: view.frame.size.height)

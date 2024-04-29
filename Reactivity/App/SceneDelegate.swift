@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        window?.rootViewController = FeedVideoViewController()
+        window?.rootViewController = TabbarViewController()
         
         window?.makeKeyAndVisible()
     }
