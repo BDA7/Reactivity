@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FE0FA28F2BDD1D1C008DFB14 /* 1.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = FE0FA28E2BDD1D1C008DFB14 /* 1.MP4 */; };
+		FE199C202BE70BE200B1E543 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE199C1F2BE70BE200B1E543 /* AppCoordinator.swift */; };
+		FE199C222BE70CCE00B1E543 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE199C212BE70CCE00B1E543 /* TabCoordinator.swift */; };
+		FE199C252BE70D9300B1E543 /* AddVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE199C242BE70D9300B1E543 /* AddVideoViewController.swift */; };
+		FE199C2B2BE7D04700B1E543 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FE199C2A2BE7D04700B1E543 /* SnapKit */; };
 		FE68FB5B2BDE81BF00BC073B /* FeedVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68FB5A2BDE81BF00BC073B /* FeedVideoViewModel.swift */; };
 		FE68FB5D2BDE820800BC073B /* FeedVideoViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68FB5C2BDE820800BC073B /* FeedVideoViewBuilder.swift */; };
 		FE92070A2BDC6C1300A1B1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9207092BDC6C1300A1B1B2 /* AppDelegate.swift */; };
@@ -25,8 +29,6 @@
 		FEAC44752BDD69E400B7962D /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = FEAC44742BDD69E400B7962D /* RxBlocking */; };
 		FEAC44772BDD69E400B7962D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FEAC44762BDD69E400B7962D /* RxCocoa */; };
 		FEAC44792BDD69E400B7962D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = FEAC44782BDD69E400B7962D /* RxRelay */; };
-		FEAC447C2BDD69F100B7962D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FEAC447B2BDD69F100B7962D /* SnapKit */; };
-		FEAC447E2BDD69F100B7962D /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FEAC447D2BDD69F100B7962D /* SnapKit-Dynamic */; };
 		FEAC44882BDD88A400B7962D /* FeedVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAC44872BDD88A400B7962D /* FeedVideoViewController.swift */; };
 		FED41E652BDE4642001A0E6B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED41E642BDE4642001A0E6B /* VideoCollectionViewCell.swift */; };
 		FED41E682BDE54EC001A0E6B /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = FED41E672BDE54EC001A0E6B /* RxGesture */; };
@@ -47,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		FE0FA28E2BDD1D1C008DFB14 /* 1.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.MP4; sourceTree = "<group>"; };
+		FE199C1F2BE70BE200B1E543 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FE199C212BE70CCE00B1E543 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		FE199C242BE70D9300B1E543 /* AddVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVideoViewController.swift; sourceTree = "<group>"; };
 		FE68FB5A2BDE81BF00BC073B /* FeedVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVideoViewModel.swift; sourceTree = "<group>"; };
 		FE68FB5C2BDE820800BC073B /* FeedVideoViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVideoViewBuilder.swift; sourceTree = "<group>"; };
 		FE9207062BDC6C1300A1B1B2 /* Reactivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reactivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,15 +80,30 @@
 				FEAC44772BDD69E400B7962D /* RxCocoa in Frameworks */,
 				FEAC44792BDD69E400B7962D /* RxRelay in Frameworks */,
 				FEAC44752BDD69E400B7962D /* RxBlocking in Frameworks */,
-				FEAC447C2BDD69F100B7962D /* SnapKit in Frameworks */,
 				FED41E682BDE54EC001A0E6B /* RxGesture in Frameworks */,
-				FEAC447E2BDD69F100B7962D /* SnapKit-Dynamic in Frameworks */,
+				FE199C2B2BE7D04700B1E543 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE199C1E2BE70BD800B1E543 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FE199C1F2BE70BE200B1E543 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FE199C232BE70D8500B1E543 /* AddVideo */ = {
+			isa = PBXGroup;
+			children = (
+				FE199C242BE70D9300B1E543 /* AddVideoViewController.swift */,
+			);
+			path = AddVideo;
+			sourceTree = "<group>";
+		};
 		FE9206FD2BDC6C1300A1B1B2 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +123,7 @@
 		FE9207082BDC6C1300A1B1B2 /* Reactivity */ = {
 			isa = PBXGroup;
 			children = (
+				FE199C1E2BE70BD800B1E543 /* Coordinator */,
 				FE92074D2BDC777100A1B1B2 /* CommonUI */,
 				FE9207342BDC72B800A1B1B2 /* Mocks */,
 				FE9207312BDC724300A1B1B2 /* Protocols */,
@@ -128,6 +149,7 @@
 		FE9207292BDC706E00A1B1B2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FE199C232BE70D8500B1E543 /* AddVideo */,
 				FE9670F32BDFC1FE002BACF8 /* Friends */,
 				FE9670F02BDFC1BB002BACF8 /* Messanger */,
 				FE9670ED2BDFBD8E002BACF8 /* Profile */,
@@ -167,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FE9670EB2BDFB7EE002BACF8 /* TabbarViewController.swift */,
+				FE199C212BE70CCE00B1E543 /* TabCoordinator.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -250,9 +273,8 @@
 				FEAC44742BDD69E400B7962D /* RxBlocking */,
 				FEAC44762BDD69E400B7962D /* RxCocoa */,
 				FEAC44782BDD69E400B7962D /* RxRelay */,
-				FEAC447B2BDD69F100B7962D /* SnapKit */,
-				FEAC447D2BDD69F100B7962D /* SnapKit-Dynamic */,
 				FED41E672BDE54EC001A0E6B /* RxGesture */,
+				FE199C2A2BE7D04700B1E543 /* SnapKit */,
 			);
 			productName = Reactivity;
 			productReference = FE9207062BDC6C1300A1B1B2 /* Reactivity.app */;
@@ -284,8 +306,8 @@
 			mainGroup = FE9206FD2BDC6C1300A1B1B2;
 			packageReferences = (
 				FEAC44732BDD69E400B7962D /* XCRemoteSwiftPackageReference "RxSwift" */,
-				FEAC447A2BDD69F100B7962D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				FED41E662BDE54EC001A0E6B /* XCRemoteSwiftPackageReference "RxGesture" */,
+				FE199C292BE7D04700B1E543 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = FE9207072BDC6C1300A1B1B2 /* Products */;
 			projectDirPath = "";
@@ -321,9 +343,12 @@
 				FE68FB5B2BDE81BF00BC073B /* FeedVideoViewModel.swift in Sources */,
 				FE92070C2BDC6C1300A1B1B2 /* SceneDelegate.swift in Sources */,
 				FE9207332BDC724E00A1B1B2 /* ViewModelProtocol.swift in Sources */,
+				FE199C252BE70D9300B1E543 /* AddVideoViewController.swift in Sources */,
+				FE199C202BE70BE200B1E543 /* AppCoordinator.swift in Sources */,
 				FE68FB5D2BDE820800BC073B /* FeedVideoViewBuilder.swift in Sources */,
 				FE9670EF2BDFBDA9002BACF8 /* ProfileViewController.swift in Sources */,
 				FE9207142BDC6C1300A1B1B2 /* Reactivity.xcdatamodeld in Sources */,
+				FE199C222BE70CCE00B1E543 /* TabCoordinator.swift in Sources */,
 				FE9670F22BDFC1C7002BACF8 /* MessangerViewController.swift in Sources */,
 				FED41E652BDE4642001A0E6B /* VideoCollectionViewCell.swift in Sources */,
 				FE9670EC2BDFB7EE002BACF8 /* TabbarViewController.swift in Sources */,
@@ -474,10 +499,13 @@
 				DEVELOPMENT_TEAM = U49D7QC954;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reactivity/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "camera app video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow the microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,10 +533,13 @@
 				DEVELOPMENT_TEAM = U49D7QC954;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Reactivity/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "camera app video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow the microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,20 +581,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FE199C292BE7D04700B1E543 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		FEAC44732BDD69E400B7962D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
 				kind = exactVersion;
 				version = 6.7.0;
-			};
-		};
-		FEAC447A2BDD69F100B7962D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = exactVersion;
-				version = 5.7.1;
 			};
 		};
 		FED41E662BDE54EC001A0E6B /* XCRemoteSwiftPackageReference "RxGesture" */ = {
@@ -577,6 +608,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FE199C2A2BE7D04700B1E543 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE199C292BE7D04700B1E543 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		FEAC44742BDD69E400B7962D /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FEAC44732BDD69E400B7962D /* XCRemoteSwiftPackageReference "RxSwift" */;
@@ -591,16 +627,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEAC44732BDD69E400B7962D /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
-		};
-		FEAC447B2BDD69F100B7962D /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEAC447A2BDD69F100B7962D /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		FEAC447D2BDD69F100B7962D /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEAC447A2BDD69F100B7962D /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		FED41E672BDE54EC001A0E6B /* RxGesture */ = {
 			isa = XCSwiftPackageProductDependency;

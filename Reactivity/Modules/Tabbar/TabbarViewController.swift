@@ -13,6 +13,8 @@ final class TabbarViewController: UITabBarController {
     private let messangerView = MessangerViewController()
     private let friendsView = FriendsViewController()
     
+    var coordinator: TabCoordinatorDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewControllers()
@@ -54,6 +56,7 @@ final class TabbarViewController: UITabBarController {
         config.cornerStyle = .large
         
         let centerButton = UIButton(configuration: config)
+        centerButton.addTarget(self, action: #selector(showAddVideo), for: .touchUpInside)
         self.tabBar.addSubview(centerButton)
         centerButton.snp.makeConstraints {
             $0.top.equalToSuperview()
@@ -61,8 +64,14 @@ final class TabbarViewController: UITabBarController {
         }
         self.view.layoutIfNeeded()
     }
+    
+    @objc
+    private func showAddVideo() {
+        coordinator?.showAddVideo()
+    }
 }
 
+@available(iOS 17, *)
 #Preview("Tabbar", traits: .portrait, body: {
     TabbarViewController()
 })

@@ -40,6 +40,12 @@ extension FeedVideoViewController {
         super.viewDidLayoutSubviews()
         collectionView?.frame = view.bounds
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        guard let visibleCell = collectionView?.visibleCells.first as? VideoCollectionViewCell else { return }
+        visibleCell.pauseVideo()
+    }
 }
 
 //MARK: - Collection View
@@ -87,6 +93,7 @@ extension FeedVideoViewController: UICollectionViewDataSource, UICollectionViewD
 }
 
 //MARK: - Preview
+@available(iOS 17, *)
 #Preview("Feed View", traits: .portrait, body: {
     FeedVideoViewController(viewModel: FeedVideoViewModel())
 })

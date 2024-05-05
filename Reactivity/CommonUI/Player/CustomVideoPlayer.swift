@@ -67,6 +67,7 @@ final class CustomVideoPlayer: UIView {
     }
 }
 
+@available(iOS 17, *)
 #Preview(traits: .portrait, body: {
     CustomVideoPlayer(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
 })
